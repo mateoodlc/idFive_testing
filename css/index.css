@@ -40,7 +40,8 @@ header {
 }
 @media only screen and (max-width: 400px) {
   .main-title {
-    background: #000;
+    max-width: 74%;
+    margin-bottom: 30px;
   }
 }
 .content {
