@@ -43,20 +43,29 @@ body
 
 .close-button
     position absolute
+    display flex
+    justify-content space-around
+    align-items center
     z-index 999
-    top 5%
+    top 10%
+    color white
     right 5%
-    .close-line1
-        content ''
-        display block
-        width 15px
-        height 2px
-        background white
-        transform rotate(-45deg)
-    .close-line2
-        content ''
-        display block
-        width 15px
-        height 2px
-        background white
-        transform rotate(45deg)
+    .close-icon
+        display flex
+        justify-content center
+        align-items center
+        .close-line1
+            content ''
+            display block
+            position absolute
+            width 15px
+            height 2px
+            background white
+            transform rotate(-45deg)
+        .close-line2
+            content ''
+            display block
+            width 15px
+            height 2px
+            background white
+            transform rotate(45deg)

@@ -452,19 +452,29 @@ body {
 }
 .close-button {
   position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   z-index: 999;
-  top: 5%;
+  top: 10%;
+  color: #fff;
   right: 5%;
 }
-.close-button .close-line1 {
+.close-button .close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-button .close-icon .close-line1 {
   content: '';
   display: block;
+  position: absolute;
   width: 15px;
   height: 2px;
   background: #fff;
   transform: rotate(-45deg);
 }
-.close-button .close-line2 {
+.close-button .close-icon .close-line2 {
   content: '';
   display: block;
   width: 15px;
