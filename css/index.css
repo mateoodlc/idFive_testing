@@ -434,10 +434,12 @@ body {
   }
 }
 .menu-container {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   left: -100%;
-  transition: 1s all;
+  transition: 1s all ease;
+  background: var(--purple);
 }
 .menu-container.menu-opened {
   left: 0 !important;

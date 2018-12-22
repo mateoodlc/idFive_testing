@@ -1,14 +1,5 @@
 // XMLHttpRequest wrapper using callbacks
-const isMobile = require('isMobilejs');
-const userAgent = req.headers['user-agent'];
 
-//rupture requires
-let accord = require('accord'),
-    stylus = accord.load('stylus'),
-    rupture = require('rupture');
-
-    stylus.renderFile('example.styl', {use: rupture() })
-        .done(console.log.bind(console), console.error.bind(console));
 
 function request(obj, successHandler, errorHandler) {
     var xhr = new XMLHttpRequest();
