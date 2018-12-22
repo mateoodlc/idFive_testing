@@ -8,11 +8,22 @@ footer
     color white
     +mobile()
         flex-wrap wrap
+        flex-direction column
+        justify-content space-evenly
+        height 600px
+
+.social-container
+    display flex
+    justify-content flex-start
+    margin-bottom 10px
+    +mobile()
+        justify-content center
 
 .social
     display inline-flex
     width 30px
     height 30px
+    margin-right 15px
     background-size cover
     background-repeat no-repeat
     background-origin center
@@ -20,5 +31,18 @@ footer
 .copyright
     display flex
     flex-direction column
+    +mobile()
+        width 100%
+        text-align center
+
+.address
+    +mobile()
+        width 100%
+        text-align center
+
+.privacy
+    +mobile()
+        width 100%
+        text-align center
 
     
