@@ -437,10 +437,33 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  top: 0;
   left: -100%;
   transition: 1s all ease;
   background: var(--purple);
 }
 .menu-container.menu-opened {
   left: 0 !important;
+}
+.close-button {
+  position: absolute;
+  z-index: 999;
+  top: 5%;
+  right: 5%;
+}
+.close-button .close-line1 {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(-45deg);
+}
+.close-button .close-line2 {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(45deg);
 }
