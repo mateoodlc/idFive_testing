@@ -1,0 +1,56 @@
+ @import 'vars.styl'
+ .about
+     display flex
+     flex-wrap wrap
+     flex-direction column
+     justify-content space-around
+     align-items center
+     padding 50px 50px
+    .about-content
+        display flex
+        flex-wrap wrap
+        justify-content space-evenly
+        align-items center
+        height 100%
+        max-width 60%
+    .about-description_text
+        text-align center
+    .about-modules
+        display flex
+        flex-wrap wrap
+        justify-content space-around
+        width 100%
+        .about-modules_item
+            position relative
+            margin 30px 10px
+            +mobile()
+                margin 50px 10px
+            p
+                text-align center
+                margin-top 15px
+            .about-modules_item-image
+                width 300px
+                height 300px
+                background-size cover
+                background-origin center
+                background-repeat no-repeat
+                +mobile()
+                    width 200px
+                    height 200px
+            .about-modules_item-icon
+                position absolute
+                display flex
+                justify-content center
+                align-items center
+                left 50%
+                transform translateX(-50%);
+                top -15%
+                width 50px
+                height 50px
+                padding 20px
+                background --purple 
+                border none
+                border-radius 100%
+                +mobile()
+                    width 30px
+                    height 30px

@@ -1,0 +1,31 @@
+@import "banner.styl"
+@import "about.styl"
+@import "infogrid.styl"
+@import "footer.styl"
+@import "vars.styl"
+
+*
+    margin 0
+    padding 0
+
+body
+    padding 5%
+
+.main-container
+    height 100vh
+
+.call-to-action
+    display flex
+    justify-content space-around
+    align-items center
+    height 245px
+    background-color var(--purple)
+    padding 50px
+    p
+        max-width 70%
+    +mobile()
+        flex-wrap wrap
+        padding 100px 60px
+        p
+            text-align center
+            max-width 100%

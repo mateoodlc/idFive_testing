@@ -1,0 +1,397 @@
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2% 5%;
+  background-image: url("../assets/images/banner_background.jpg");
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+.menu {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 20px;
+  margin-left: 8px;
+}
+.menu-button .menu-line {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+.main-title {
+  display: block;
+  max-width: 50%;
+}
+@media only screen and (max-width: 400px) {
+  .main-title {
+    background: #000;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.scroll-button {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+}
+:root {
+  --purple: #5c3bb1;
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("/../assets/fonts/ProximaNova-Bold.eot");
+  src: url("/../assets/fonts/ProximaNova-Bold.otf") format('truetype');
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url("/../assets/fonts/ProximaNova-Light.eot");
+  src: url("/../assets/fonts/ProximaNova-Light.otf");
+}
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("/../assets/fonts/ProximaNova-Regular.eot");
+  src: url("/../assets/fonts/ProximaNova-Regular.otf");
+}
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url("/../assets/fonts/ProximaNova-Semibold.eot");
+  src: url("/../assets/fonts/ProximaNova-Semibold.otf");
+}
+h1 {
+  font-family: 'ProximaNovaBold', FallBack, sans-serif;
+  font-size: 45px;
+  color: #fff;
+}
+h2 {
+  font-family: 'ProximaNovaLight', FallBack, sans-serif;
+  font-size: 30px;
+  color: #000;
+}
+p {
+  font-family: 'ProximaNovaRegular', FallBack, sans-serif;
+  font-size: 16px;
+}
+p.light {
+  color: #fff;
+}
+button {
+  display: block;
+  min-width: 211px;
+  max-width: 211px;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-family: 'ProximaNovaRegular', FallBack, sans-serif;
+  background: none;
+  border: 2px solid #fff;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 50px;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  max-width: 60%;
+}
+.about-description_text {
+  text-align: center;
+}
+.about-modules {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.about-modules .about-modules_item {
+  position: relative;
+  margin: 30px 10px;
+}
+@media only screen and (max-width: 400px) {
+  .about-modules .about-modules_item {
+    margin: 50px 10px;
+  }
+}
+.about-modules .about-modules_item p {
+  text-align: center;
+  margin-top: 15px;
+}
+.about-modules .about-modules_item .about-modules_item-image {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-origin: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 400px) {
+  .about-modules .about-modules_item .about-modules_item-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+.about-modules .about-modules_item .about-modules_item-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15%;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  background: --purple;
+  border: none;
+  border-radius: 100%;
+}
+@media only screen and (max-width: 400px) {
+  .about-modules .about-modules_item .about-modules_item-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+.info-grid {
+  width: 100vw;
+  height: 100vh;
+}
+.info-grid .info-grid-first_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+@media only screen and (max-width: 400px) {
+  .info-grid .info-grid-first_row {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: top;
+  }
+}
+.info-grid .info-grid-second_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+@media only screen and (max-width: 400px) {
+  .info-grid .info-grid-second_row {
+    flex-wrap: wrap;
+    align-items: top;
+  }
+}
+.info-grid_description {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  text-align: left;
+}
+.info-grid_description p {
+  max-width: 50%;
+}
+@media only screen and (max-width: 400px) {
+  .info-grid_description {
+    width: 100%;
+  }
+  .info-grid_description p {
+    max-width: 80%;
+    text-align: center;
+  }
+}
+.info-grid_image {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: center;
+}
+@media only screen and (max-width: 400px) {
+  .info-grid_image {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 30px;
+  }
+}
+:root {
+  --purple: #5c3bb1;
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("/../assets/fonts/ProximaNova-Bold.eot");
+  src: url("/../assets/fonts/ProximaNova-Bold.otf") format('truetype');
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url("/../assets/fonts/ProximaNova-Light.eot");
+  src: url("/../assets/fonts/ProximaNova-Light.otf");
+}
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("/../assets/fonts/ProximaNova-Regular.eot");
+  src: url("/../assets/fonts/ProximaNova-Regular.otf");
+}
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url("/../assets/fonts/ProximaNova-Semibold.eot");
+  src: url("/../assets/fonts/ProximaNova-Semibold.otf");
+}
+h1 {
+  font-family: 'ProximaNovaBold', FallBack, sans-serif;
+  font-size: 45px;
+  color: #fff;
+}
+h2 {
+  font-family: 'ProximaNovaLight', FallBack, sans-serif;
+  font-size: 30px;
+  color: #000;
+}
+p {
+  font-family: 'ProximaNovaRegular', FallBack, sans-serif;
+  font-size: 16px;
+}
+p.light {
+  color: #fff;
+}
+button {
+  display: block;
+  min-width: 211px;
+  max-width: 211px;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-family: 'ProximaNovaRegular', FallBack, sans-serif;
+  background: none;
+  border: 2px solid #fff;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--purple);
+  height: 295px;
+  color: #fff;
+}
+@media only screen and (max-width: 400px) {
+  footer {
+    flex-wrap: wrap;
+  }
+}
+.social {
+  width: 30px;
+  height: 30px;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+}
+:root {
+  --purple: #5c3bb1;
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url("/../assets/fonts/ProximaNova-Bold.eot");
+  src: url("/../assets/fonts/ProximaNova-Bold.otf") format('truetype');
+}
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url("/../assets/fonts/ProximaNova-Light.eot");
+  src: url("/../assets/fonts/ProximaNova-Light.otf");
+}
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("/../assets/fonts/ProximaNova-Regular.eot");
+  src: url("/../assets/fonts/ProximaNova-Regular.otf");
+}
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url("/../assets/fonts/ProximaNova-Semibold.eot");
+  src: url("/../assets/fonts/ProximaNova-Semibold.otf");
+}
+h1 {
+  font-family: 'ProximaNovaBold', FallBack, sans-serif;
+  font-size: 45px;
+  color: #fff;
+}
+h2 {
+  font-family: 'ProximaNovaLight', FallBack, sans-serif;
+  font-size: 30px;
+  color: #000;
+}
+p {
+  font-family: 'ProximaNovaRegular', FallBack, sans-serif;
+  font-size: 16px;
+}
+p.light {
+  color: #fff;
+}
+button {
+  display: block;
+  min-width: 211px;
+  max-width: 211px;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-family: 'ProximaNovaRegular', FallBack, sans-serif;
+  background: none;
+  border: 2px solid #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 5%;
+}
+.main-container {
+  height: 100vh;
+}
+.call-to-action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 245px;
+  background-color: var(--purple);
+  padding: 50px;
+}
+.call-to-action p {
+  max-width: 70%;
+}
+@media only screen and (max-width: 400px) {
+  .call-to-action {
+    flex-wrap: wrap;
+    padding: 100px 60px;
+  }
+  .call-to-action p {
+    text-align: center;
+    max-width: 100%;
+  }
+}
